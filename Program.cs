@@ -1,7 +1,7 @@
 using System;
 using System.Data.Odbc;
 
-namespace cs_core_mysql_01
+namespace cs_core_mysql_02
 {
     class Program
     {
