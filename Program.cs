@@ -16,8 +16,7 @@ namespace cs_core_mysql_01
 
             // ドライバ文字列をセット ( 波型括弧{} は必要ありません ) 
             // 文字列を正確に取得するには、レジストリ : HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\ODBCINST.INI
-            builder.Driver = "MySQL ODBC 5.3 Unicode Driver";
-            //builder.Driver = "MySQL ODBC 8.0 Unicode Driver";
+            builder.Driver = "MySQL ODBC 8.0 Unicode Driver";
 
             // 接続用のパラメータを追加
             builder.Add("server", "localhost");
