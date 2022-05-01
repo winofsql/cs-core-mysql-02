@@ -88,20 +88,7 @@ Source: {ex.Errors[i].Source}\r\nSQL: {ex.Errors[i].SQLState}
                 // *******************************
                 while (myReader.Read())
                 {
-                    string result = "";
-
-                    // 列定義は文字列
-                    result += $"{GetValue(myReader, "社員コード")} : ";
-                    result += $"{GetValue(myReader, "氏名")} : ";
-
-                    // 列定義は整数
-                    result += $"{GetValue(myReader, "給与")} : ";
-
-                    // 列定義は日付
-                    result += $"{GetValue(myReader, "作成日")} : ";
-                    result += $"{GetValue(myReader, "更新日")} : ";
-                    result += $"{GetValue(myReader, "生年月日")} : ";
-                    result += $"{GetValue(myReader, "誕生日")}";
+                    result += @$"{GetValue(myReader, "社員コード")} : {GetValue(myReader, "氏名")} : {GetValue(myReader, "給与")} : {GetValue(myReader, "作成日")} : {GetValue(myReader, "更新日")} : {GetValue(myReader, "生年月日")} : {GetValue(myReader, "誕生日")}";
 
                     // 内容をコンソールに表示
                     Console.WriteLine(result);
