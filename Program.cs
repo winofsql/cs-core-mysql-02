@@ -88,6 +88,8 @@ Source: {ex.Errors[i].Source}\r\nSQL: {ex.Errors[i].SQLState}
                 // *******************************
                 while (myReader.Read())
                 {
+                    string result = "";
+
                     result += @$"{GetValue(myReader, "社員コード")} : {GetValue(myReader, "氏名")} : {GetValue(myReader, "給与")} : {GetValue(myReader, "作成日")} : {GetValue(myReader, "更新日")} : {GetValue(myReader, "生年月日")} : {GetValue(myReader, "誕生日")}";
 
                     // 内容をコンソールに表示
