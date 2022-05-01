@@ -51,7 +51,12 @@ namespace cs_core_mysql_01
 
                     for (i = 0; i < ex.Errors.Count; i++)
                     {
-                        errorMessages += $"Index #{i.ToString()}\r\nMessage: {ex.Errors[i].Message}\r\nNativeError: {ex.Errors[i].NativeError.ToString()}\r\nSource: {ex.Errors[i].Source}\r\nSQL: {ex.Errors[i].SQLState}\r\n";
+                        errorMessages +=
+@$"Index #{i.ToString()}
+Message: {ex.Errors[i].Message}
+NativeError: {ex.Errors[i].NativeError.ToString()}
+Source: {ex.Errors[i].Source}\r\nSQL: {ex.Errors[i].SQLState}
+";
                     }
 
                     Console.WriteLine(errorMessages);
